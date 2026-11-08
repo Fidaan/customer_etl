@@ -6,7 +6,7 @@ from airflow.providers.standard.operators.python import PythonOperator
 
 # ========= EDIT THESE TWO LINES =========
 CSV_PATH = "/Users/fidan/Documents/Customer_ETL/Bakery_Customer_Data.csv"
-CONNECTION_URI = "postgresql+psycopg2://postgres:UPmeaGWVSMXkvkVkElzYZOhYNgPqqGDr@kodama.proxy.rlwy.net:28228/railway"
+CONNECTION_URI = "postgresql+psycopg2://postgres:[YOURPASSWORD]@db.******.supabase.co:*****/postgres"
 # ========================================
 
 def run_etl():
