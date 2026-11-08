@@ -31,8 +31,12 @@ export CUSTOMER_DB_URI="postgresql+psycopg2://USER:PASSWORD@HOST:PORT/DBNAME"
 export CUSTOMER_CSV_PATH="/full/path/to/Bakery_Customer_Data.csv"
 
 Running with Airflow
-export AIRFLOW_HOME=~/airflow
-# place customer_dag_etl.py in ~/airflow/dags/
+export AIRFLOW_HOME=~/airflow # place customer_dag_etl.py in ~/airflow/dags/
 airflow standalone
 
 Then open the Airflow UI at http://localhost:8080, find the customer_full_load DAG, enable it, and trigger a run. Watch the three tasks (extract → transform → load) complete in the Graph view.
+
+### Airflow DAG
+The pipeline running successfully in Apache Airflow:
+<img width="2000" height="1235" alt="image" src="https://github.com/user-attachments/assets/8bc2d581-52f0-4361-9988-a6018c281f5d" />
+
